@@ -1,0 +1,77 @@
+Case Name,Years analyzed,Nyrs available history,"Transition to opposite phase 
+(months)",Value of max variance,Month of max variance,Value of min variance,Month of min variance,Notes
+HadiSST,1965-2002,,~11,1.45,Dec,0.3,Apr,
+HadiSST,1942-1981,,~11,0.9,Nov/Dec,0.25,May,
+CESM2,0001-0151,,12,1.75,Dec-Jan,0.65,Jul,
+CESM1,0001-1000,,12,1.4,Dec-Jan,0.4,Jul,
+38,0001-0061,Climo only (yrs 2-22),~22,1.5,Dec,0.6,Jul,Cesm2_3_alpha16b (035); new wsub values (halved; =0 in microp_aero_wsub_min)
+42,0001-0048,Climo only (yrs 2-22),~18,>3,Dec,1.1,May,038 + Modify ice cloud fraction algorithm (iceopt = 5 → 4). retains larger ice fractions in the small ice concentration regime
+44,0001-0045,Climo only (yrs 2-22),~11,1.9,Dec,0.7,Jul,Taus code on; different tunings for non-CLUBB and CLUBB gamma (043+tunings from 037)
+46,0001-0071,Climo only (yrs 2-22),~15,2.3,Dec,0.9,Jul,037+new liquid/frozen runoff mapping files
+47,0001-0071,Climo only (yrs 2-22),~14,2.1,Dec,0.9,Jun/Jul,046+hybrid ocean coords
+48,0001-0037,Climo only (yrs 2-22),~14,>3,Nov-Jan,1.2,May,042+zmconv_num_cin=1->2
+54,0001-0101,,~13,2.3,Dec,0.9,Jul,New baseline: cesm2_3_alpha16g
+54,0075-0103,"1-152 
+(all h*)",12,1.1,Dec,0.4,Jul,New baseline: cesm2_3_alpha16g
+55,0001-0101,Climo only (yrs 2-22),~18,1.6,Nov/Dec,0.7,Jul,054+hybrid ocean coords
+58,0001-0017,Climo only (yrs 2-22),~13,>3,Oct-Jan,0.85,May,054+cldfrc2m_do_avg_aist_algs=False (??)
+61,0001-0049,Climo only (yrs 2-21),~13,2.5,Dec,0.9,Apr,054+revert ice cloud fraction
+63,0001-0025,Climo only (yrs 2-21),~13,1.75,Dec,0.4,May,"054+ tuning for RESTOM: clubb_l_do_expldiff_rtm_thlm = .true.
+microp_aero_wsub_scale = 1.0"
+64,0001-0059,"1-59 
+(all h*)",~13,1.15,Dec,0.5,Jul,054+Gustiness (old calculation)
+064b,0043-0069,"43-68
+(all h*)",~13,1.7,Dec,0.6,Aug,? ensemble of 064?
+064c,0043-0069,"43-68
+(all h*)",~11,1.8,Dec,0.45,Jun,? ensemble of 064?
+70,0001-0027,Climo only (yrs 2-11),~14,2.6,Dec,0.8,May,054+gusts+rever ice clouds as in 61+limit for new vapor deposition on snow in PUMAS as in 68
+72,0001-0033,Climo only (yrs 2-21),12,2.2,Dec,0.7,Jul,064+Reduced gustiness factor (old calculation)
+73,0001-0019,Climo only (yrs 2-18),~13,1.5,Dec,0.4,May,"Start of cold branch (more similar to CAM6) 
+054+clubb diffusion on+rever NorESM mods+gust+new pumas limiter"
+073b,0001-0043,"Climo only (yrs 10-30, 40-60)",~18,1,Nov,0.3,May-Jun,073 twin + new initial conditions from 0055-01-01 for ocn/atm (not ice/lnd)
+74,0001-0023,Climo only (yrs 2-18),~18,2,Dec,0.6,Apr,"Start of warm branch (latest greatest CLUBB) 
+065+revert norESM mods+gust+new pumas limiter"
+75,0001-0043,"1-125 
+(all h*)",~13,1.5,Dec,0.25,May,Retune cold branch
+075c,0001-0051,"1-50 
+(all h*)
+Gustavo scratch",~14,1.65,Nov,0.4,May,075 twin+new initial conditions from 0055 (with ice/lnd/atm/ocn all this time)
+76,0001-0042,"1-81 
+(all h*)",~15,2.6,Jan,0.75,May,Retune warm branch with taus code
+78,0001-0049,"1-48 
+(all h*)",12,1,Dec,0.3,May,075 (cold branch)+faster dycore
+078b,0001-0031,"1-95 
+(all h*)",~14,1.5,Dec,0.4,May,"?? “Starting Lscale branch from a spunup state in prevision of ECS run” 
+
+078 (faster dy core + cold branch) but start from 075 at yr 101"
+79,0001-0049,"1-48 
+(all h*)
+Cecile scratch",~14,1.4,Nov,0.35,Apr-May,078+Rougher topography
+80,0001-0023,"1-22 
+(h0)
+Cecile scratch",~18,2.4,Dec,0.75,Apr,"Taus code tests 
+077 + optimized dycore+new pe_layout+tuning dcs"
+081b,0001-0035,"1-62 
+(all h*)
+Cecile scratch",~15,1.1,Nov,0.4,Jul,"078b+Gustiness (new), 3x"
+082b,0001-0031,"1-63 
+(all h*)
+Cecile scratch",~14,1,Nov,0.35,Jul,"078b+Gustiness (new), 1x"
+083b,0001-0033,"1-62 
+(all h*)
+Cecile scratch",~19,1.7,Nov,0.7,Jul,"078b+Gustiness (new), 0x"
+084b,0001-0035,"1-50 
+(all h*)
+Cecile scratch",~13,1.35,Nov,0.4,Jul,082b+COARE flux scheme
+98,0001-0151,"1-254 
+(all h*)
+Cecile scratch",~18,1.6,Nov,0.5,Jul,"* There are a few 098 runs; I think this is the right one (it’s the first, not the 20th century) 
+
+093+(RRTMGP + CLUBB bugfix) 
+093 = 092 + RRTMGP
+092 = 091 + hybrid ocn coords
+091 = new baseline for cesm2_3_alpha17f (or cesm2_3_beta17)"
+104,0001-0067,"1-68
+(all h*)
+Cecile scratch",~14,0.8,Nov/Jan,0.3,Jul,"Tune C8 relative to 103
+103=new tag+(RRTMGP; hycom ocn grid;bugfix for physpropo (100) and sea-salt tuning (102); )"
