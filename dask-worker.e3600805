@@ -1,0 +1,22 @@
+2025-01-27 08:56:30,121 - distributed.nanny - INFO -         Start Nanny at: 'tcp://128.117.208.105:37687'
+2025-01-27 08:56:31,498 - distributed.worker - INFO -       Start worker at: tcp://128.117.208.105:33893
+2025-01-27 08:56:31,498 - distributed.worker - INFO -          Listening to: tcp://128.117.208.105:33893
+2025-01-27 08:56:31,498 - distributed.worker - INFO -           Worker name:               PBSCluster-2
+2025-01-27 08:56:31,498 - distributed.worker - INFO -          dashboard at:      128.117.208.105:39743
+2025-01-27 08:56:31,498 - distributed.worker - INFO - Waiting to connect to: tcp://128.117.208.102:36191
+2025-01-27 08:56:31,498 - distributed.worker - INFO - -------------------------------------------------
+2025-01-27 08:56:31,499 - distributed.worker - INFO -               Threads:                          1
+2025-01-27 08:56:31,499 - distributed.worker - INFO -                Memory:                   3.73 GiB
+2025-01-27 08:56:31,499 - distributed.worker - INFO -       Local Directory: /glade/derecho/scratch/mdfowler/tmp/dask-scratch-space/worker-332tvuvp
+2025-01-27 08:56:31,499 - distributed.worker - INFO - -------------------------------------------------
+2025-01-27 08:56:32,457 - distributed.worker - INFO - Starting Worker plugin shuffle
+2025-01-27 08:56:32,458 - distributed.worker - INFO -         Registered to: tcp://128.117.208.102:36191
+2025-01-27 08:56:32,458 - distributed.worker - INFO - -------------------------------------------------
+2025-01-27 08:56:32,458 - distributed.core - INFO - Starting established connection to tcp://128.117.208.102:36191
+ERROR 1: PROJ: proj_create_from_database: Open of /glade/u/apps/opt/conda/envs/npl-2024a/share/proj failed
+2025-01-27 09:14:30,024 - distributed.utils_perf - WARNING - full garbage collections took 11% CPU time recently (threshold: 10%)
+2025-01-27 09:20:36,169 - distributed._signals - INFO - Received signal SIGTERM (15)
+2025-01-27 09:20:36,171 - distributed.nanny - INFO - Closing Nanny at 'tcp://128.117.208.105:37687'. Reason: signal-15
+2025-01-27 09:20:36,173 - distributed.nanny - INFO - Nanny asking worker to close. Reason: signal-15
+2025-01-27 09:20:36,204 - distributed.nanny - INFO - Worker process 45793 was killed by signal 15
+2025-01-27 09:20:36,208 - distributed.dask_worker - INFO - End worker
